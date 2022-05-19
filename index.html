@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>BOOTSTRAP & SCSS BEM STARTER</title>
+</head>
+<body>
+
+    <div class="container">
+        <form class="w-25 mt-5 needs-validation" novalidate action="https://echo.htmlacademy.ru/" method="post">
+          <div class="mb-3">
+            <label for="name" class="form-label">Ismingiz</label>
+            <input type="text" class="form-control" id="name" aria-describedby="name" name="user_name" minlength="3" required>
+
+            <div class="valid-feedback">
+              To`g`ri Ism!
+            </div>
+          </div>
+
+          <div class="mb-3 has-validation">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="user_email" required>
+            <div id="emailHelp" class="form-text">Emailingizni kiriting</div>
+
+            <div class="valid-feedback">
+              To`g`ri Email!
+            </div>
+          </div>
+
+          <div>
+            <select class="form-select mb-3" aria-label="Default select example" name="user_faculty" required>
+              <option selected>Fakultetlar</option>
+              <option value="Economic">Economics</option>
+              <option value="cs">Computer Sciance</option>
+              <option value="ba">Businrss Adminstration</option>
+              <option value="medicine">Medicine</option>
+            </select>
+
+            <div class="invalid-feedback">
+              Please select a valid state.
+            </div>
+          </div>
+
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+            <label class="form-check-label" for="exampleCheck1">Tasdiqlash</label>
+
+            <div class="invalid-feedback">
+              Iltimos ma`lumotlarni tasdiqlang!
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>
